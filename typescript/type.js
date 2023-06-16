@@ -71,6 +71,16 @@ loginUserInter = function (id, pw) {
     //미리 반환값을 기록했기에 반환값을 잘못적지 않았는지 확인가능
     return true;
 };
-//인터페이스로 함수의 타입을 지정해도
-//필요에 따라서 매개변수의 내용이 달라진다면 수정 할 수 있다
-//예 : 자료형,매개변수의 개수
+var jhon = {
+    //Developer내용
+    skill: "typescript",
+    //Person내용
+    name: "John"
+};
+var green = {};
+green.name = "green";
+green.skill = "javascript";
+green.age = 15;
+//green.text=""; 와 같이 Develpoer에 없는 인터페이스는 지정 할 수 없다
+console.log(jhon, green);
+//let blue:Worker 선언 및 값 할당하기

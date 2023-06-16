@@ -84,3 +84,15 @@ green.age = 15;
 //green.text=""; 와 같이 Develpoer에 없는 인터페이스는 지정 할 수 없다
 console.log(jhon, green);
 //let blue:Worker 선언 및 값 할당하기
+var blue = {
+    job: "worker",
+    name: "Blue",
+    age: 15
+};
+console.log(blue);
+var numArray = [1, 2, 3, 4];
+//객체의 배열을 만들 때, 인터페이스를 사용해서 만들 수 있다
+var objectArray = [
+    { name: "홍길동", age: 15 }
+];
+console.log(objectArray.map(function (o) { return o; }));

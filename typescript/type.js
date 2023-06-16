@@ -93,6 +93,7 @@ console.log(blue);
 var numArray = [1, 2, 3, 4];
 //객체의 배열을 만들 때, 인터페이스를 사용해서 만들 수 있다
 var objectArray = [
-    { name: "홍길동", age: 15 }
+    { name: "홍길동", age: 15 },
+    { name: "성춘향", age: 20 }
 ];
 console.log(objectArray.map(function (o) { return o; }));

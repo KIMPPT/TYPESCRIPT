@@ -159,6 +159,8 @@ mytypeclass.money = 1000;
 mytypeclass.setname = "green";
 console.log(mytypeclass);
 console.log(mytypeclass.getname);
+//console.log(mytypeclass.name)
+//이 불가능한 이유는 private 때문에 name 속성은 클래스 내에서만 사용되기 때문
 //추상 클래스
 //클래스중에서도 대부분 메서드값이 비어 있는 클래스
 //abstract : 값이 비어있는 메서드 앞에 붙여준다

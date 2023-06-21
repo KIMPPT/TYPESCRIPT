@@ -4,7 +4,7 @@ import React, { Component } from "react";
 interface CounterProps {
   startNumber: number;
   name?: string;
-  check:boolean;
+  check?:boolean;
 }
 //state값을 가져오기 위해 interface를 사용
 interface CounterState{

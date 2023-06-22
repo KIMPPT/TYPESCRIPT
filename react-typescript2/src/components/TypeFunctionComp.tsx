@@ -15,6 +15,12 @@ export default function TypeFunctionComp(props:CountProps) {
     const [count,setCount]=useState<number|undefined>(5);
     const [arr,setArr]=useState<Array<number>>([1,2,3]);
     useEffect(()=>{},[])
+    
+    //이벤트 객체를 사용하는 메서드
+    //이벤트 객체의 타입을 동일하게 가져와서 사용
+    const InputChnage=(e:React.ChangeEvent<HTMLInputElement>)=>{
+      setText(e.target.value)
+    }
   return (
     <div>
         <h3>TypeFunctionComp</h3>
@@ -26,6 +32,9 @@ export default function TypeFunctionComp(props:CountProps) {
         <p>{props.check?"확인":"미확인"}</p>
         {/*useState로 [1,2,3]을 만들어서 map으로 출력하기 */}
         {arr.map((num)=><li>{num}</li>)}
+        <h3>글자확인:{text}</h3>
+        <input type="text"
+        onChange={(e)=>setText(e.target.value)}/>
     </div>
   )
 }

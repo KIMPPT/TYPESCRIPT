@@ -5,6 +5,7 @@ import NoProps from './components/NoProps';
 import TypeClassComp from './components/TypeClassComp';
 import TypeFunctionComp from './components/TypeFunctionComp';
 import TypeArrowFuncComp from './components/TypeArrowFuncComp';
+import FetchComp from './components/FetchComp';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <TypeClassComp startNumber={3} name='green' check={true}/>
       <TypeFunctionComp startNumber={1} name='blue' check={true}/>
       <TypeArrowFuncComp startNumber={5}/>
+      <hr />
+      <FetchComp/>
     </div>
   );
 }

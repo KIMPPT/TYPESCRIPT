@@ -26,6 +26,7 @@ export default function FetchComp() {
       REST_NM: response.body[0].REST_NM,
     });
     setDataArray(response.body);
+    console.log(dataArray)
   };
   useEffect(() => {
     getDate();
@@ -46,7 +47,7 @@ export default function FetchComp() {
         //현재의 타입이 undefined나 다른이 있을 때
         //?를 통해서 현재의 타입이 배열일때만 실행
         dataArray?.map((d)=>(
-            <li>{d.AREA_NM}</li>
+            <li>{d.MENU_NM}</li>
         ))
 
       }
